@@ -17,3 +17,8 @@ class GitHubClient:
     def fetch_user(self):
         """Fetch the configured GitHub user."""
         return self._client.get_user(self._username)
+    
+    def fetch_repositories(self):
+        """Fetch the configured user's repositories."""
+
+        return self.fetch_user().get_repos()
