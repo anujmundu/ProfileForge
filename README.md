@@ -26,7 +26,7 @@
 
 I am an **Artificial Intelligence & Machine Learning Engineer** focused on building intelligent systems that solve real-world problems through scalable software engineering and modern AI techniques.
 
-My work combines **Machine Learning, Deep Learning, Computer Vision, Backend Engineering, and Distributed Systems** to develop production-ready applications rather than isolated research prototypes. I enjoy designing complete AI solutions—from data processing and model development to deployment, monitoring, and system optimization.
+My work combines **Machine Learning, Deep Learning, Computer Vision, Backend Engineering, and Distributed Systems** to develop production-ready applications rather than isolated research prototypes. I focus on designing complete AI systems—from data ingestion and model development to deployment, monitoring, and long-term maintenance.
 
 Over the past few years, I have worked on projects spanning **medical imaging, predictive analytics, distributed task processing, reinforcement learning, intelligent automation, and AI-powered backend services**, with an emphasis on writing maintainable, modular, and scalable software.
 
@@ -44,6 +44,34 @@ I believe that successful AI products require far more than high model accuracy.
 - **Deployable** — engineered for practical use beyond experimentation
 
 For me, machine learning is only one component of a larger software engineering system. My goal is to build AI applications that are robust, reusable, and capable of delivering measurable impact.
+
+---
+
+# 🧭 AI Engineering Principles
+
+Every system I build is guided by a consistent engineering mindset rather than a collection of technologies.
+
+My design philosophy focuses on creating software that is practical, maintainable, and ready for real-world deployment.
+
+- 🧩 Prefer modular architecture over monolithic design
+- 🚀 Build production-ready systems instead of experimental notebooks
+- 🔍 Balance explainability with predictive performance
+- ⚙️ Prioritize clean software engineering and maintainable code
+- 🧪 Validate ideas through measurable experimentation
+- 🔄 Design reproducible workflows with clear documentation
+
+---
+
+# 🎯 Current Focus
+
+```text
+Building Production AI Systems
+→ Agentic AI
+→ Retrieval-Augmented Generation (RAG)
+→ Long-Term Memory
+→ Computer Vision
+→ Distributed Backend Architecture
+```
 
 ---
 
@@ -125,40 +153,74 @@ For me, machine learning is only one component of a larger software engineering 
 
 ---
 
-# ⭐ Featured Engineering Projects
+## 🏛️ Engineering Interests
+
+| Area | Focus |
+|------|------|
+| 🤖 Agentic AI | Multi-Agent Systems |
+| 📄 RAG | Retrieval Pipelines |
+| 🧠 AI Memory | Long-Term Context |
+| 👁️ Vision | Medical Imaging |
+| ⚙️ Backend | Distributed APIs |
+| ☁️ Infrastructure | Production AI |
+
+These areas represent the direction in which I continue to expand both my research and engineering work.
 
 ---
 
-## 🧠 Anuj AI Lab *(Flagship Project)*
-[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
+# 🚀 Flagship Project
 
-### Problem
+<div align="center">
 
-Modern AI applications require far more than a language model. They need retrieval pipelines, memory, document processing, tool integration, and modular backend services that work together as a complete system.
+# 🧠 Anuj AI Lab
+![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
+![Stage](https://img.shields.io/badge/Stage-Production%20Development-blue?style=flat-square)
 
-### Solution
+### Production AI Engineering Platform
 
-Building a production-grade AI engineering platform that combines **Retrieval-Augmented Generation (RAG), intelligent memory, document ingestion, citation grounding, agent workflows, and scalable FastAPI services** into a modular architecture for real-world AI applications.
+> **Mission:** Transform AI research concepts into production-ready intelligent systems through modular architecture, scalable backend engineering, and modern AI workflows.
 
-### Highlights
+*An open, modular AI engineering platform for building production-ready applications powered by Retrieval-Augmented Generation (RAG), intelligent memory, semantic search, document processing, and scalable backend services.*
 
-- 🧩 Modular AI architecture
+</div>
+
+<p align="center">
+
+[![Repository](https://img.shields.io/badge/Repository-View%20Code-blue?style=for-the-badge)](https://github.com/anujmundu/anuj-ai-lab)
+
+</p>
+
+---
+
+### Platform Capabilities
+
+**Knowledge & Retrieval**
+
 - 📄 Retrieval-Augmented Generation (RAG)
-- 🧠 Memory & conversation management
-- 📚 Document ingestion pipeline
-- 🔍 Semantic search & citation grounding
-- ⚙️ FastAPI backend
-- 🐳 Docker-ready deployment
-- 🚀 Production-oriented project structure
+- 🔍 Semantic Search
+- 📚 Intelligent Document Processing
 
-**Tech Stack**
+**Memory & Reasoning**
 
-`Python` • `FastAPI` • `Vector Search` • `LLMs` • `Docker` • `React` • `TypeScript`
+- 🧠 Persistent Memory
+- 🤖 Agent Workflows
+- 💬 Conversation Management
+
+**Infrastructure**
+
+- ⚙️ FastAPI Services
+- 🔌 Connector Architecture
+- 🐳 Docker Deployment
+- 📊 Monitoring & Diagnostics
+
+---
+
+# ⭐ Other Featured Projects
 
 ---
 
 ## 🩺 Medical AI — Lung Nodule Detection
-[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/lung-nodule-detection.git)
 
 ### Problem
 
@@ -182,7 +244,7 @@ Designed a medical object detection framework using **YOLOv5-CASP** to identify 
 ---
 
 ## ⚙️ Distributed Task Processing Workflow Engine
-[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/distributed-hyperparameter-tuner.git)
 
 ### Problem
 
@@ -207,7 +269,7 @@ Developed a distributed workflow engine capable of managing task queues, worker 
 ---
 
 ## 👥 Employee Attrition Prediction Service
-[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/Employee-Attrition-Prediction-Service.git)
 
 ### Problem
 
@@ -232,6 +294,7 @@ Built a production-ready prediction service integrating machine learning, explai
 ---
 
 ## 🤖 Reinforcement Learning Job Scheduling
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/reinforcement-learning-job-scheduling.git)
 
 ### Problem
 
@@ -276,11 +339,30 @@ Implemented a reinforcement learning–based scheduling system capable of learni
 
 ---
 
+## 📂 Repository Collections
+
+### 🧠 AI Platforms
+End-to-end AI systems featuring RAG, memory architectures, AI agents, and scalable LLM workflows.
+
+### 🩺 Medical AI
+Computer vision projects for healthcare, including medical object detection and diagnostic imaging.
+
+### ⚙️ Backend Engineering
+FastAPI services, distributed systems, REST APIs, and scalable backend architectures.
+
+### 🤖 Machine Learning
+Predictive analytics, deep learning, reinforcement learning, and applied ML solutions.
+
+### 📚 Research & Experiments
+Prototypes, technical explorations, and learning projects that support continuous growth.
+
+---
+
 # 🤝 Let's Connect
 
 <p align="center">
 
-<a href="https://github.com/anujmundu">
+<a href="https://www.linkedin.com/in/anujmundu/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
@@ -288,7 +370,7 @@ Implemented a reinforcement learning–based scheduling system capable of learni
 <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
-<a href="anujmundu-portfolio.netlify.app">
+<a href="https://anujmundu-portfolio.netlify.app">
 <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
 
@@ -296,18 +378,24 @@ Implemented a reinforcement learning–based scheduling system capable of learni
 
 ---
 
-# 💬 Favorite Quote
+# 📌 Beyond Coding
 
-> *"The best AI systems are not just intelligent—they are reliable, scalable, and built to solve real-world problems."*
+Outside of software engineering, I enjoy exploring football analytics, gaming, anime, traveling, and emerging AI research.
+
+I believe continuous learning, curiosity, and disciplined engineering are essential for building intelligent systems that create meaningful real-world impact.
+
+---
 
 ---
 
 <p align="center">
 
-### Thanks for visiting!
+Thanks for visiting my GitHub profile.
 
-If you enjoy my work or find my projects useful, consider giving them a ⭐.
+I'm always interested in collaborating on AI engineering, machine learning, computer vision, and backend systems.
 
-Let's build the future of AI together.
+If one of my projects interests you, feel free to connect or reach out.
+
+⭐ Happy Building!
 
 </p>
