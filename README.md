@@ -125,4 +125,125 @@ For me, machine learning is only one component of a larger software engineering 
 
 ---
 
+# ⭐ Featured Engineering Projects
 
+---
+
+## 🧠 Anuj AI Lab *(Flagship Project)*
+
+### Problem
+
+Modern AI applications require far more than a language model. They need retrieval pipelines, memory, document processing, tool integration, and modular backend services that work together as a complete system.
+
+### Solution
+
+Building a production-grade AI engineering platform that combines **Retrieval-Augmented Generation (RAG), intelligent memory, document ingestion, citation grounding, agent workflows, and scalable FastAPI services** into a modular architecture for real-world AI applications.
+
+### Highlights
+
+- 🧩 Modular AI architecture
+- 📄 Retrieval-Augmented Generation (RAG)
+- 🧠 Memory & conversation management
+- 📚 Document ingestion pipeline
+- 🔍 Semantic search & citation grounding
+- ⚙️ FastAPI backend
+- 🐳 Docker-ready deployment
+- 🚀 Production-oriented project structure
+
+**Tech Stack**
+
+`Python` • `FastAPI` • `Vector Search` • `LLMs` • `Docker` • `React` • `TypeScript`
+
+---
+
+## 🩺 Medical AI — Lung Nodule Detection
+
+### Problem
+
+Early detection of lung nodules is essential for improving lung cancer diagnosis, yet achieving high detection accuracy while maintaining real-time performance remains challenging.
+
+### Solution
+
+Designed a medical object detection framework using **YOLOv5-CASP** to identify lung nodules across CT scans, chest X-rays, and MRI datasets with a focus on accuracy, efficiency, and deployment readiness.
+
+### Highlights
+
+- 🚀 Real-time inference (~71 FPS)
+- 📈 Significant performance improvements on benchmark datasets
+- 🎯 Optimized detection accuracy
+- 🏥 Medical imaging workflow
+
+**Tech Stack**
+
+`PyTorch` • `YOLOv5` • `OpenCV` • `Medical Imaging`
+
+---
+
+## ⚙️ Distributed Task Processing Workflow Engine
+
+### Problem
+
+Large-scale applications often require asynchronous task execution with retry handling, monitoring, and fault tolerance.
+
+### Solution
+
+Developed a distributed workflow engine capable of managing task queues, worker execution, retries, metrics, and failure recovery through a scalable backend architecture.
+
+### Highlights
+
+- 🔄 Distributed workers
+- 📬 Queue processing
+- ♻️ Retry mechanisms
+- 📊 Metrics dashboard
+- 🛡 Fault tolerance
+
+**Tech Stack**
+
+`FastAPI` • `Redis` • `PostgreSQL`
+
+---
+
+## 👥 Employee Attrition Prediction Service
+
+### Problem
+
+Organizations need proactive methods to identify employee attrition risks before workforce turnover impacts productivity.
+
+### Solution
+
+Built a production-ready prediction service integrating machine learning, explainability, monitoring, and automated model retraining.
+
+### Highlights
+
+- 📈 Prediction API
+- 📊 Drift detection
+- 🔁 Automated retraining
+- 🔍 Explainable AI
+- 📉 Performance monitoring
+
+**Tech Stack**
+
+`FastAPI` • `Scikit-Learn` • `PyTorch`
+
+---
+
+## 🤖 Reinforcement Learning Job Scheduling
+
+### Problem
+
+Traditional scheduling strategies struggle to adapt dynamically to changing workloads and resource availability.
+
+### Solution
+
+Implemented a reinforcement learning–based scheduling system capable of learning optimized scheduling policies from interaction with the environment.
+
+### Highlights
+
+- 🎯 Adaptive scheduling
+- 📚 Reinforcement Learning
+- 📈 Policy optimization
+- ⚡ Resource utilization
+
+**Tech Stack**
+
+`Python` • `Reinforcement Learning`
