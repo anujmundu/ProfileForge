@@ -1,0 +1,9 @@
+pydantic
+requests
+python-dotenv
+Jinja2
+PyGithub
+
+pytest
+black
+ruff
