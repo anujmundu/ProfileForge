@@ -9,9 +9,12 @@ from pathlib import Path
 from typing import Any
 from pathlib import Path
 
-from src.core.models import Project
-from src.core.models import Research
-from src.core.models import Theme
+from src.core.models import (
+    GitHubConfig,
+    Project,
+    Research,
+    Theme,
+)
 
 
 class ConfigLoader:
@@ -86,3 +89,13 @@ class ConfigLoader:
     def clear_cache(self) -> None:
 
         self._cache.clear()
+        
+    def load_github(self) -> GitHubConfig:
+
+        if "github" not in self._cache:
+
+            self._cache["github"] = GitHubConfig(
+                **self._load_json("github.json")
+            )
+
+        return self._cache["github"]

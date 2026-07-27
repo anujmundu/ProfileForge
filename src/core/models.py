@@ -43,3 +43,8 @@ class Research(BaseModel):
     domains: List[str]
     research_goal: str
     last_updated: date
+    
+class GitHubConfig(BaseModel):
+    username: str
+    repository: str
+    cache_minutes: int = Field(ge=1)
