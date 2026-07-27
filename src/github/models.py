@@ -43,3 +43,11 @@ class DashboardStatistics:
     total_forks: int
     archived_repositories: int
     forked_repositories: int
+    
+@dataclass(slots=True, frozen=True)
+class DashboardData:
+    """Complete dashboard data produced by the service layer."""
+
+    profile: UserProfile
+    repositories: list[RepositorySummary]
+    statistics: DashboardStatistics
