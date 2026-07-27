@@ -1,16 +1,19 @@
+"""
+GitHub API client.
+"""
+
 from github import Github
 
-from src.core.application import app
+from src.core.models import GitHubConfig
 
 
 class GitHubClient:
-    """Wrapper around the PyGithub client."""
+    """Low-level wrapper around the PyGithub client."""
 
-    def __init__(self) -> None:
-        config = app.config.load_github()
-
+    def __init__(self, config: GitHubConfig) -> None:
         self._client = Github()
         self._username = config.username
 
-    def get_user(self):
+    def fetch_user(self):
+        """Fetch the configured GitHub user."""
         return self._client.get_user(self._username)
