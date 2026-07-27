@@ -33,3 +33,13 @@ class RepositorySummary:
     fork: bool
 
     html_url: str
+    
+@dataclass(slots=True, frozen=True)
+class DashboardStatistics:
+    """Aggregated statistics used by the dashboard."""
+
+    total_repositories: int
+    total_stars: int
+    total_forks: int
+    archived_repositories: int
+    forked_repositories: int
