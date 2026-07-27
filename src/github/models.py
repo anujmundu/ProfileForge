@@ -7,7 +7,7 @@ dashboard and renderer.
 """
 
 from dataclasses import dataclass
-
+from datetime import datetime
 
 @dataclass(slots=True, frozen=True)
 class UserProfile:
@@ -22,8 +22,11 @@ class UserProfile:
 
 @dataclass(slots=True, frozen=True)
 class RepositorySummary:
+    """Represents a GitHub repository."""
+
     name: str
     description: str | None
+
     language: str | None
 
     stars: int
@@ -33,6 +36,20 @@ class RepositorySummary:
     fork: bool
 
     html_url: str
+
+    created_at: datetime
+    updated_at: datetime
+    pushed_at: datetime
+
+    default_branch: str
+
+    visibility: str
+
+    size: int
+
+    topics: list[str]
+
+    license_name: str | None
     
 @dataclass(slots=True, frozen=True)
 class DashboardStatistics:

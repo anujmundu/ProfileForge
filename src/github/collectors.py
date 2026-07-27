@@ -43,11 +43,32 @@ class GitHubCollector:
                 name=repo.name,
                 description=repo.description,
                 language=repo.language,
+
                 stars=repo.stargazers_count,
                 forks=repo.forks_count,
+
                 archived=repo.archived,
                 fork=repo.fork,
+
                 html_url=repo.html_url,
+
+                created_at=repo.created_at,
+                updated_at=repo.updated_at,
+                pushed_at=repo.pushed_at,
+
+                default_branch=repo.default_branch,
+
+                visibility=repo.visibility,
+
+                size=repo.size,
+
+                topics=repo.get_topics(),
+
+                license_name=(
+                    repo.license.name
+                    if repo.license is not None
+                    else None
+                ),
             )
             for repo in repositories
         ]

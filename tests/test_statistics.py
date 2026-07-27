@@ -1,5 +1,6 @@
 from src.github.models import RepositorySummary
 from src.github.statistics import StatisticsEngine
+from datetime import datetime
 
 
 def test_statistics_engine():
@@ -14,6 +15,19 @@ def test_statistics_engine():
             archived=False,
             fork=False,
             html_url="https://example.com/repo1",
+            created_at=datetime(2024, 1, 1),
+            updated_at=datetime(2024, 2, 1),
+            pushed_at=datetime(2024, 2, 10),
+
+            default_branch="main",
+
+            visibility="public",
+
+            size=150,
+
+            topics=["python"],
+
+            license_name="MIT",
         ),
         RepositorySummary(
             name="repo2",
@@ -24,6 +38,19 @@ def test_statistics_engine():
             archived=True,
             fork=True,
             html_url="https://example.com/repo2",
+            created_at=datetime(2023, 5, 1),
+            updated_at=datetime(2023, 8, 1),
+            pushed_at=datetime(2023, 8, 15),
+
+            default_branch="main",
+
+            visibility="public",
+
+            size=75,
+
+            topics=["typescript"],
+
+            license_name=None,
         ),
     ]
 
