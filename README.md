@@ -130,6 +130,7 @@ For me, machine learning is only one component of a larger software engineering 
 ---
 
 ## 🧠 Anuj AI Lab *(Flagship Project)*
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
 
 ### Problem
 
@@ -157,6 +158,7 @@ Building a production-grade AI engineering platform that combines **Retrieval-Au
 ---
 
 ## 🩺 Medical AI — Lung Nodule Detection
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
 
 ### Problem
 
@@ -180,6 +182,7 @@ Designed a medical object detection framework using **YOLOv5-CASP** to identify 
 ---
 
 ## ⚙️ Distributed Task Processing Workflow Engine
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
 
 ### Problem
 
@@ -204,6 +207,7 @@ Developed a distributed workflow engine capable of managing task queues, worker 
 ---
 
 ## 👥 Employee Attrition Prediction Service
+[![Repository](https://img.shields.io/badge/View-Repository-blue?style=flat-square)](https://github.com/anujmundu/<repo-name>)
 
 ### Problem
 
@@ -247,3 +251,63 @@ Implemented a reinforcement learning–based scheduling system capable of learni
 **Tech Stack**
 
 `Python` • `Reinforcement Learning`
+
+# 📊 GitHub Analytics
+
+<p align="center">
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=anujmundu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anujmundu&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=anujmundu&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=anujmundu&theme=tokyo-night&hide_border=true"/>
+
+</p>
+
+---
+
+# 🤝 Let's Connect
+
+<p align="center">
+
+<a href="https://github.com/anujmundu">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="mailto:anujmark.edwin.ame@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="anujmundu-portfolio.netlify.app">
+<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+# 💬 Favorite Quote
+
+> *"The best AI systems are not just intelligent—they are reliable, scalable, and built to solve real-world problems."*
+
+---
+
+<p align="center">
+
+### Thanks for visiting!
+
+If you enjoy my work or find my projects useful, consider giving them a ⭐.
+
+Let's build the future of AI together.
+
+</p>
