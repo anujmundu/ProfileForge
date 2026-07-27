@@ -1,0 +1,14 @@
+{
+    "background": "#0D1117",
+    "card": "#161B22",
+    "border": "#30363D",
+
+    "primary": "#00E5FF",
+    "secondary": "#7C4DFF",
+    "accent": "#64FFDA",
+
+    "text": "#FFFFFF",
+    "subtext": "#8B949E",
+
+    "font": "JetBrains Mono"
+}
