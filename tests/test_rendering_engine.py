@@ -56,3 +56,7 @@ def test_rendering_engine_generates_valid_svg():
     
     assert "Anuj Mundu" in texts
     assert "AI Engineer" in texts
+    assert "GitHub Profile" in texts
+    assert "Profile Dashboard" in texts
+    assert "Language: Python" in texts
+    assert "★ 35   Forks: 7" in texts
