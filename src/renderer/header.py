@@ -5,16 +5,15 @@ Header renderer.
 from xml.etree.ElementTree import Element
 
 from src.dashboard.models import DashboardView
+from src.renderer.svg.styles import Theme
 from src.renderer.svg.text import add_text
-from src.renderer.svg.styles import (
-    TITLE_FONT_SIZE,
-    SUBTITLE_FONT_SIZE,
-    FONT_WEIGHT_BOLD,
-)
 
 
 class HeaderRenderer:
     """Renders the profile header."""
+
+    def __init__(self, theme: Theme) -> None:
+        self._theme = theme
 
     def render(
         self,
@@ -28,8 +27,8 @@ class HeaderRenderer:
             content=dashboard.name or dashboard.username,
             x=40,
             y=70,
-            font_size=TITLE_FONT_SIZE,
-            font_weight=FONT_WEIGHT_BOLD,
+            font_size=self._theme.title_font_size,
+            font_weight=self._theme.title_weight,
         )
 
         add_text(
@@ -37,5 +36,6 @@ class HeaderRenderer:
             content=dashboard.bio or "",
             x=40,
             y=105,
-            font_size=SUBTITLE_FONT_SIZE,
+            font_size=self._theme.subtitle_font_size,
+            font_weight=self._theme.body_weight,
         )

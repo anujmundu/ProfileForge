@@ -8,8 +8,9 @@ from src.dashboard.models import DashboardView
 from src.renderer.header import HeaderRenderer
 from src.renderer.svg.canvas import SvgCanvas
 from src.renderer.svg.styles import (
-    CANVAS_WIDTH,
     CANVAS_HEIGHT,
+    CANVAS_WIDTH,
+    GITHUB_DARK,
 )
 
 
@@ -18,7 +19,8 @@ class RenderingEngine:
 
     def __init__(self) -> None:
         self._canvas = SvgCanvas()
-        self._header = HeaderRenderer()
+        self._theme = GITHUB_DARK
+        self._header = HeaderRenderer(self._theme)
 
     def render(
         self,

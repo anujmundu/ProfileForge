@@ -1,30 +1,52 @@
 """
-Shared SVG styling constants.
+Shared SVG theme definitions.
 """
 
-# Canvas
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True, slots=True)
+class Theme:
+    """Visual theme for SVG rendering."""
+
+    background: str
+    surface: str
+    border: str
+
+    text_primary: str
+    text_secondary: str
+
+    accent: str
+
+    title_font_size: int
+    subtitle_font_size: int
+    body_font_size: int
+    small_font_size: int
+
+    title_weight: str
+    body_weight: str
+
+    radius: int
+    stroke_width: int
+
+
 CANVAS_WIDTH = 1200
 CANVAS_HEIGHT = 630
 
-# Typography
-TITLE_FONT_SIZE = 32
-SUBTITLE_FONT_SIZE = 18
-BODY_FONT_SIZE = 16
-SMALL_FONT_SIZE = 13
 
-FONT_WEIGHT_NORMAL = "normal"
-FONT_WEIGHT_BOLD = "bold"
-
-# Colors
-COLOR_BACKGROUND = "#0d1117"
-COLOR_SURFACE = "#161b22"
-COLOR_BORDER = "#30363d"
-
-COLOR_TEXT_PRIMARY = "#f0f6fc"
-COLOR_TEXT_SECONDARY = "#8b949e"
-
-COLOR_ACCENT = "#58a6ff"
-
-# Shapes
-DEFAULT_RADIUS = 12
-DEFAULT_STROKE_WIDTH = 1
+GITHUB_DARK = Theme(
+    background="#0d1117",
+    surface="#161b22",
+    border="#30363d",
+    text_primary="#f0f6fc",
+    text_secondary="#8b949e",
+    accent="#58a6ff",
+    title_font_size=32,
+    subtitle_font_size=18,
+    body_font_size=16,
+    small_font_size=13,
+    title_weight="bold",
+    body_weight="normal",
+    radius=12,
+    stroke_width=1,
+)
