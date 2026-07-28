@@ -5,8 +5,12 @@ Rendering engine.
 from xml.etree.ElementTree import tostring
 
 from src.dashboard.models import DashboardView
-from src.renderer.svg.canvas import SvgCanvas
 from src.renderer.header import HeaderRenderer
+from src.renderer.svg.canvas import SvgCanvas
+from src.renderer.svg.styles import (
+    CANVAS_WIDTH,
+    CANVAS_HEIGHT,
+)
 
 
 class RenderingEngine:
@@ -23,11 +27,14 @@ class RenderingEngine:
         """Render the dashboard as an SVG document."""
 
         svg = self._canvas.create(
-            width=1200,
-            height=630,
+            width=CANVAS_WIDTH,
+            height=CANVAS_HEIGHT,
         )
 
-        self._header.render(svg, dashboard)
+        self._header.render(
+            svg,
+            dashboard,
+        )
 
         return tostring(
             svg,
