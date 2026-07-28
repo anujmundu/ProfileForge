@@ -14,6 +14,15 @@ from src.renderer.svg.styles import (
     CANVAS_WIDTH,
     GITHUB_DARK,
 )
+from src.renderer.layout import (
+    CARD_HEIGHT,
+    CARD_HORIZONTAL_GAP,
+    CARD_VERTICAL_GAP,
+    CARD_WIDTH,
+    FIRST_CARD_X,
+    FIRST_CARD_Y,
+    MAX_COLUMNS,
+)
 
 
 class RenderingEngine:
@@ -44,13 +53,19 @@ class RenderingEngine:
             dashboard,
         )
 
-        # Repository card
-        if dashboard.repositories:
+        for index, repository in enumerate(dashboard.repositories):
+
+            row = index // MAX_COLUMNS
+            column = index % MAX_COLUMNS
+
+            x = FIRST_CARD_X + column * (CARD_WIDTH + CARD_HORIZONTAL_GAP)
+            y = FIRST_CARD_Y + row * (CARD_HEIGHT + CARD_VERTICAL_GAP)
+
             self._cards.render(
                 svg,
-                card=dashboard.repositories[0],
-                x=40,
-                y=150,
+                card=repository,
+                x=x,
+                y=y,
             )
 
         # Statistics panel

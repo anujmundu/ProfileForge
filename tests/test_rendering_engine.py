@@ -19,14 +19,15 @@ def test_rendering_engine_generates_valid_svg():
         total_forks=7,
         repositories=[
             RepositoryCard(
-                name="GitHub Profile",
-                description="Profile Dashboard",
+                name=f"Repository {i}",
+                description="Example",
                 language="Python",
-                stars=35,
-                forks=7,
-                html_url="https://github.com/anujmundu",
+                stars=i,
+                forks=i,
+                html_url="https://github.com/example",
             )
-        ],
+            for i in range(1, 5)
+        ]
     )
 
     engine = RenderingEngine()
@@ -56,11 +57,18 @@ def test_rendering_engine_generates_valid_svg():
     
     assert "Anuj Mundu" in texts
     assert "AI Engineer" in texts
-    assert "GitHub Profile" in texts
-    assert "Profile Dashboard" in texts
-    assert "Language: Python" in texts
-    assert "★ 35   Forks: 7" in texts
     assert "GitHub Statistics" in texts
     assert "Repositories : 2" in texts
-    assert "Stars        : 35" in texts
     assert "Forks        : 7" in texts
+    assert "Repository 1" in texts
+    assert "Repository 2" in texts
+    assert "Repository 3" in texts
+    assert "Repository 4" in texts
+
+    assert "Example" in texts
+    assert "Language: Python" in texts
+
+    assert "★ 1   Forks: 1" in texts
+    assert "★ 2   Forks: 2" in texts
+    assert "★ 3   Forks: 3" in texts
+    assert "★ 4   Forks: 4" in texts
