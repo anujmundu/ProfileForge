@@ -3,7 +3,6 @@ Typed configuration models for the GitHub Profile Engine.
 """
 
 from datetime import date
-from typing import List
 
 from pydantic import BaseModel, Field
 
@@ -39,12 +38,14 @@ class CurrentResearch(BaseModel):
 class Research(BaseModel):
     papers_read: int
     currently_reading: CurrentResearch
-    completed: List[str]
-    domains: List[str]
+    completed: list[str]
+    domains: list[str]
     research_goal: str
     last_updated: date
-    
+
+
 class GitHubConfig(BaseModel):
     username: str
     repository: str
+    token: str
     cache_minutes: int = Field(ge=1)

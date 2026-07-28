@@ -7,7 +7,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any
-from pathlib import Path
 
 from src.core.models import (
     GitHubConfig,
@@ -25,7 +24,7 @@ class ConfigLoader:
     and caches validated objects.
     """
 
-    _instance = None
+    _instance: "ConfigLoader | None" = None
 
     PROJECT_ROOT = Path(__file__).resolve().parents[2]
     CONFIG_DIR = PROJECT_ROOT / "config"

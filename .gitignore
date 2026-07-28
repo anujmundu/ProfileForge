@@ -33,3 +33,5 @@ Thumbs.db
 # Generated SVGs (optional if regenerated automatically)
 assets/generated/*.svg
 !assets/generated/.gitkeep
+
+config/github.json
