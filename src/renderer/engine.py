@@ -7,6 +7,7 @@ from xml.etree.ElementTree import tostring
 from src.dashboard.models import DashboardView
 from src.renderer.card import CardRenderer
 from src.renderer.header import HeaderRenderer
+from src.renderer.stats import StatsRenderer
 from src.renderer.svg.canvas import SvgCanvas
 from src.renderer.svg.styles import (
     CANVAS_HEIGHT,
@@ -24,26 +25,26 @@ class RenderingEngine:
 
         self._header = HeaderRenderer(self._theme)
         self._cards = CardRenderer(self._theme)
+        self._stats = StatsRenderer(self._theme)
 
     def render(
         self,
         dashboard: DashboardView,
     ) -> str:
-        """Render the dashboard as an SVG document."""
+        """Render the dashboard."""
 
-        # 1. Create the SVG canvas FIRST
         svg = self._canvas.create(
             width=CANVAS_WIDTH,
             height=CANVAS_HEIGHT,
         )
 
-        # 2. Render the header
+        # Header
         self._header.render(
             svg,
             dashboard,
         )
 
-        # 3. Render the first repository card (if available)
+        # Repository card
         if dashboard.repositories:
             self._cards.render(
                 svg,
@@ -52,7 +53,14 @@ class RenderingEngine:
                 y=150,
             )
 
-        # 4. Serialize the SVG
+        # Statistics panel
+        self._stats.render(
+            svg,
+            dashboard,
+            x=760,
+            y=150,
+        )
+
         return tostring(
             svg,
             encoding="unicode",

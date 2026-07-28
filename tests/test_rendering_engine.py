@@ -60,3 +60,7 @@ def test_rendering_engine_generates_valid_svg():
     assert "Profile Dashboard" in texts
     assert "Language: Python" in texts
     assert "★ 35   Forks: 7" in texts
+    assert "GitHub Statistics" in texts
+    assert "Repositories : 2" in texts
+    assert "Stars        : 35" in texts
+    assert "Forks        : 7" in texts
