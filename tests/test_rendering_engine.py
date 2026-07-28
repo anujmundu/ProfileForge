@@ -47,3 +47,12 @@ def test_rendering_engine_generates_valid_svg():
 
     # Verify the SVG namespace is present.
     assert "xmlns" in svg
+    
+    texts = [
+        element.text
+        for element in root.iter()
+        if element.tag.endswith("text")
+    ]
+    
+    assert "Anuj Mundu" in texts
+    assert "AI Engineer" in texts
