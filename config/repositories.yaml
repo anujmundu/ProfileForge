@@ -1,0 +1,12 @@
+featured:
+  - anuj-ai-lab
+  - medical-lung-nodule-detection
+
+exclude:
+  - .github
+  - assets
+  - docs
+
+pinned_limit: 4
+
+minimum_stars: 0

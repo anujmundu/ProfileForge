@@ -1,0 +1,35 @@
+# Hi 👋 I'm {{ profile.user.name }}
+
+{{ profile.user.bio or "" }}
+
+---
+
+## GitHub Statistics
+
+- Followers: **{{ profile.user.followers }}**
+- Following: **{{ profile.user.following }}**
+- Public Repositories: **{{ profile.statistics.total_repositories }}**
+- Total Stars: **{{ profile.statistics.total_stars }}**
+
+---
+
+## Top Languages
+
+{% for language in languages %}
+- {{ language.name }} ({{ language.percentage }}%)
+{% endfor %}
+
+---
+
+## Featured Projects
+
+{% for repository in featured_repositories %}
+### {{ repository.name }}
+
+{{ repository.description or "No description provided." }}
+
+⭐ Stars: {{ repository.stars }}
+
+🔗 {{ repository.html_url }}
+
+{% endfor %}

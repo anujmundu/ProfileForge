@@ -1,0 +1,33 @@
+profile:
+  github_username: "anujmundu"
+
+personal:
+  name: "Anuj Mundu"
+
+  headline: "AI Engineer | Machine Learning | Computer Vision | RAG Systems"
+
+  location: "India"
+
+  bio: >
+    Building production-grade AI systems, Computer Vision solutions,
+    Retrieval-Augmented Generation pipelines, and modern Python applications.
+
+social:
+  github: "https://github.com/anujmundu"
+
+  linkedin: "https://linkedin.com/in/anujmundu"
+
+  instagram: "https://www.instagram.com/markedwin.anuj"
+
+  website: "https://anujmundu-portfolio.netlify.app"
+
+career:
+  currently_learning:
+    - Multi-Agent Systems
+    - AI Engineering
+    - Distributed AI Systems
+
+  open_to_work: true
+
+theme:
+  active: retro

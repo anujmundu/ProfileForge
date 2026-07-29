@@ -1,0 +1,19 @@
+theme:
+  name: retro
+
+colors:
+  background: "#111111"
+
+  foreground: "#00FF00"
+
+  accent: "#00FFFF"
+
+  border: "#444444"
+
+fonts:
+  primary: "JetBrains Mono"
+
+dashboard:
+  width: 1200
+
+  height: 600

@@ -36,3 +36,4 @@ assets/generated/*.svg
 
 config/github.json
 .env
+*.egg-info/

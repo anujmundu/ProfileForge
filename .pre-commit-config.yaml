@@ -52,6 +52,8 @@ repos:
           - python-dotenv
           - Jinja2
           - requests
+          - PyYAML
+          - types-PyYAML
 
         args:
           - --config-file=pyproject.toml
