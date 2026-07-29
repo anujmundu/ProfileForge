@@ -9,6 +9,7 @@ dashboard and renderer.
 from dataclasses import dataclass
 from datetime import datetime
 
+
 @dataclass(slots=True, frozen=True)
 class UserProfile:
     username: str
@@ -50,7 +51,8 @@ class RepositorySummary:
     topics: list[str]
 
     license_name: str | None
-    
+
+
 @dataclass(slots=True, frozen=True)
 class DashboardStatistics:
     """Aggregated statistics used by the dashboard."""
@@ -60,7 +62,8 @@ class DashboardStatistics:
     total_forks: int
     archived_repositories: int
     forked_repositories: int
-    
+
+
 @dataclass(slots=True, frozen=True)
 class DashboardData:
     """Complete dashboard data produced by the service layer."""

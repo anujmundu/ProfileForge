@@ -5,8 +5,8 @@ Coordinates GitHub data collection and statistics generation.
 """
 
 from src.github.collectors import GitHubCollector
-from src.github.statistics import StatisticsEngine
 from src.github.models import DashboardData
+from src.github.statistics import StatisticsEngine
 
 
 class ProfileService:
@@ -19,7 +19,7 @@ class ProfileService:
     ) -> None:
         self._collector = collector
         self._statistics = statistics
-        
+
     def build_dashboard(self) -> DashboardData:
         """Build all data required to render a dashboard."""
 
@@ -34,5 +34,3 @@ class ProfileService:
             repositories=repositories,
             statistics=statistics,
         )
-    
-    

@@ -7,13 +7,6 @@ from xml.etree.ElementTree import tostring
 from src.dashboard.models import DashboardView
 from src.renderer.card import CardRenderer
 from src.renderer.header import HeaderRenderer
-from src.renderer.stats import StatsRenderer
-from src.renderer.svg.canvas import SvgCanvas
-from src.renderer.svg.styles import (
-    CANVAS_HEIGHT,
-    CANVAS_WIDTH,
-    GITHUB_DARK,
-)
 from src.renderer.layout import (
     CARD_HEIGHT,
     CARD_HORIZONTAL_GAP,
@@ -22,6 +15,13 @@ from src.renderer.layout import (
     FIRST_CARD_X,
     FIRST_CARD_Y,
     MAX_COLUMNS,
+)
+from src.renderer.stats import StatsRenderer
+from src.renderer.svg.canvas import SvgCanvas
+from src.renderer.svg.styles import (
+    CANVAS_HEIGHT,
+    CANVAS_WIDTH,
+    GITHUB_DARK,
 )
 
 
@@ -54,7 +54,6 @@ class RenderingEngine:
         )
 
         for index, repository in enumerate(dashboard.repositories):
-
             row = index // MAX_COLUMNS
             column = index % MAX_COLUMNS
 

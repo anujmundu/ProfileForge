@@ -57,15 +57,11 @@ def main() -> None:
             output_path.resolve(),
         )
 
-        logger.info(
-            "Dashboard generation completed successfully."
-        )
+        logger.info("Dashboard generation completed successfully.")
 
-    except Exception:
-        logger.exception(
-            "Dashboard generation failed."
-        )
-        raise SystemExit(1)
+    except Exception as err:
+        logger.exception("Dashboard generation failed.")
+        raise SystemExit(1) from err
 
 
 if __name__ == "__main__":

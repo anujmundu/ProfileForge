@@ -23,7 +23,7 @@ class DashboardView:
 
     username: str
     name: str | None
-    bio: str |None
+    bio: str | None
 
     total_repositories: int
     total_stars: int

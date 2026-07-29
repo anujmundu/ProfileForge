@@ -27,7 +27,7 @@ def test_rendering_engine_generates_valid_svg():
                 html_url="https://github.com/example",
             )
             for i in range(1, 5)
-        ]
+        ],
     )
 
     engine = RenderingEngine()
@@ -48,13 +48,9 @@ def test_rendering_engine_generates_valid_svg():
 
     # Verify the SVG namespace is present.
     assert "xmlns" in svg
-    
-    texts = [
-        element.text
-        for element in root.iter()
-        if element.tag.endswith("text")
-    ]
-    
+
+    texts = [element.text for element in root.iter() if element.tag.endswith("text")]
+
     assert "Anuj Mundu" in texts
     assert "AI Engineer" in texts
     assert "GitHub Statistics" in texts

@@ -8,12 +8,7 @@ import logging
 
 LOG_LEVEL = logging.INFO
 
-LOG_FORMAT = (
-    "%(asctime)s | "
-    "%(levelname)-8s | "
-    "%(name)s | "
-    "%(message)s"
-)
+LOG_FORMAT = "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
 
 
 def get_logger(name: str) -> logging.Logger:
@@ -33,9 +28,7 @@ def get_logger(name: str) -> logging.Logger:
 
     handler = logging.StreamHandler()
 
-    handler.setFormatter(
-        logging.Formatter(LOG_FORMAT)
-    )
+    handler.setFormatter(logging.Formatter(LOG_FORMAT))
 
     logger.addHandler(handler)
 

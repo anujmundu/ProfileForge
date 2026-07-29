@@ -1,10 +1,10 @@
+from datetime import datetime
+
 from src.github.models import RepositorySummary
 from src.github.statistics import StatisticsEngine
-from datetime import datetime
 
 
 def test_statistics_engine():
-
     repositories = [
         RepositorySummary(
             name="repo1",
@@ -18,15 +18,10 @@ def test_statistics_engine():
             created_at=datetime(2024, 1, 1),
             updated_at=datetime(2024, 2, 1),
             pushed_at=datetime(2024, 2, 10),
-
             default_branch="main",
-
             visibility="public",
-
             size=150,
-
             topics=["python"],
-
             license_name="MIT",
         ),
         RepositorySummary(
@@ -41,15 +36,10 @@ def test_statistics_engine():
             created_at=datetime(2023, 5, 1),
             updated_at=datetime(2023, 8, 1),
             pushed_at=datetime(2023, 8, 15),
-
             default_branch="main",
-
             visibility="public",
-
             size=75,
-
             topics=["typescript"],
-
             license_name=None,
         ),
     ]

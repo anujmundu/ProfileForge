@@ -9,10 +9,8 @@ import logging
 
 from github.NamedUser import NamedUser
 from github.Repository import Repository
-
 from src.github.api import GitHubClient
-from src.github.models import RepositorySummary
-from src.github.models import UserProfile
+from src.github.models import RepositorySummary, UserProfile
 
 logger = logging.getLogger(__name__)
 
@@ -74,11 +72,7 @@ class GitHubCollector:
             visibility=repo.visibility,
             size=repo.size,
             topics=topics,
-            license_name=(
-                repo.license.name
-                if repo.license is not None
-                else None
-            ),
+            license_name=(repo.license.name if repo.license is not None else None),
         )
 
     def _safe_topics(self, repo: Repository) -> list[str]:

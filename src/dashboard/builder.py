@@ -2,8 +2,7 @@
 Dashboard builder.
 """
 
-from src.dashboard.models import DashboardView
-from src.dashboard.models import RepositoryCard
+from src.dashboard.models import DashboardView, RepositoryCard
 from src.github.models import DashboardData
 
 
@@ -11,7 +10,6 @@ class DashboardBuilder:
     """Builds dashboard view models from domain models."""
 
     def build(self, data: DashboardData) -> DashboardView:
-
         cards = [
             RepositoryCard(
                 name=repo.name,
