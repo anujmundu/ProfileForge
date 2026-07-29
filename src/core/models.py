@@ -47,5 +47,4 @@ class Research(BaseModel):
 class GitHubConfig(BaseModel):
     username: str
     repository: str
-    token: str
     cache_minutes: int = Field(ge=1)

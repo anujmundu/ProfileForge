@@ -4,10 +4,17 @@ Application entry point.
 Generates the GitHub profile dashboard SVG.
 """
 
+import os
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 from src.bootstrap.container import build_dashboard_generator
 from src.core.application import app
+
+load_dotenv()
+
+token = os.getenv("GITHUB_TOKEN")
 
 
 def write_dashboard(

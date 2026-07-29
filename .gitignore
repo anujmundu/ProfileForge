@@ -35,3 +35,4 @@ assets/generated/*.svg
 !assets/generated/.gitkeep
 
 config/github.json
+.env

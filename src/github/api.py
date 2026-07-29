@@ -2,6 +2,10 @@
 GitHub API client.
 """
 
+import os
+
+from dotenv import load_dotenv
+
 from github import Auth, Github
 from github.GithubException import (
     BadCredentialsException,
@@ -15,15 +19,21 @@ from src.github.exceptions import (
     GitHubRateLimitError,
 )
 
+load_dotenv()
+
 
 class GitHubClient:
     """Low-level wrapper around the PyGithub client."""
 
     def __init__(self, config: GitHubConfig) -> None:
-        auth = Auth.Token(config.token)
+        token = os.getenv("GITHUB_TOKEN")
+
+        if not token:
+            raise ValueError("GITHUB_TOKEN environment variable is not set.")
+
+        auth = Auth.Token(token)
 
         self._client = Github(auth=auth)
-
         self._username = config.username
 
     def fetch_user(self):
