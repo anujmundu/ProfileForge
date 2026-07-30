@@ -1,0 +1,37 @@
+name: Package Build & Distribution Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  package-validation:
+    name: Build & Verify Wheel Distribution
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Build Tooling
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+
+      - name: Build Release Artifacts (sdist & wheel)
+        run: python scripts/build_release.py
+
+      - name: Verify Package Contents
+        run: python scripts/verify_distribution.py
+
+      - name: Test Installation in Clean Environment
+        run: python scripts/verify_installation.py
+
+      - name: Validate PyPI Metadata with Twine
+        run: twine check dist/*

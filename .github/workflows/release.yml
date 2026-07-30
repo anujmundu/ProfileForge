@@ -1,0 +1,38 @@
+name: Release Artifact Preparation
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-release-candidate:
+    name: Prepare Release Artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Build Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+
+      - name: Build Release Distribution
+        run: python scripts/build_release.py
+
+      - name: Validate Release Artifacts
+        run: |
+          python scripts/verify_distribution.py
+          twine check dist/*
+
+      - name: Upload Release Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-packages
+          path: dist/

@@ -4,20 +4,22 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "profileforge"
-version = "0.0.0"
+version = "0.1.0"
 description = "A production-grade platform for creating self-updating GitHub profile READMEs and animated SVG graphics."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
-    { name = "ProfileForge Team" }
+    { name = "ProfileForge Team", email = "team@profileforge.org" }
 ]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
@@ -26,6 +28,12 @@ dependencies = [
     "pyyaml>=6.0.1",
     "jinja2>=3.1.2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/anujmundu/anujmundu"
+Documentation = "https://github.com/anujmundu/anujmundu#readme"
+Repository = "https://github.com/anujmundu/anujmundu"
+Issues = "https://github.com/anujmundu/anujmundu/issues"
 
 [project.optional-dependencies]
 dev = [
