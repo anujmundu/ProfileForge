@@ -445,11 +445,29 @@ Completed Deliverables:
 - Canonical collection snapshot model (`CollectionSnapshot`)
 - Subsystem diagnostics (`CollectorDiagnostics`)
 
+## Phase 6 — Analytics Subsystem
+
+Status:
+
+✅ Complete
+
+Completed Deliverables:
+
+- Repository scoring engine (`RepositoryScorer`) with score breakdown
+- Featured repository selection (`RepositoryAnalyzer`)
+- Language usage distribution & Shannon diversity index (`LanguageAnalyzer`)
+- Technology stack inference engine (`TechnologyAnalyzer`)
+- Skill inference with confidence scores & rationale (`SkillAnalyzer`)
+- Activity & recency analyzer (`ActivityAnalyzer`)
+- Structured portfolio summary assembler (`PortfolioAnalyzer`)
+- Analytics pipeline orchestrator (`AnalyticsOrchestrator`)
+- Immutable canonical analytics snapshot (`AnalyticsSnapshot`)
+
 ---
 
 # Active Work
 
-Phase 6 — Analytics Subsystem (Ready to Begin)
+Phase 7 — Generators Subsystem (Ready to Begin)
 
 ---
 

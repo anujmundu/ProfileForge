@@ -57,7 +57,7 @@ Complete
 
 # Current Development Phase
 
-Phase 5 — Collectors Subsystem
+Phase 6 — Analytics Subsystem
 
 Status:
 
@@ -65,13 +65,13 @@ Complete (Verified, Tested & Approved)
 
 Objective:
 
-Implement the complete Collectors subsystem (`profileforge.collectors`) defined by Document 03 and Document 08.
+Implement the complete Analytics subsystem (`profileforge.analytics`) defined by Document 08.
 
-All modular collectors (`UserCollector`, `RepositoryCollector`, `LanguageCollector`, `ContributionCollector`, `OrganizationCollector`), deterministic pipeline orchestration (`CollectorOrchestrator`), canonical `CollectionSnapshot` domain model, and subsystem diagnostics are fully verified and tested (44/44 unit tests passing across repo).
+All analyzers (`RepositoryAnalyzer`, `LanguageAnalyzer`, `TechnologyAnalyzer`, `SkillAnalyzer`, `ActivityAnalyzer`, `PortfolioAnalyzer`), scoring engine (`RepositoryScorer`), deterministic pipeline orchestration (`AnalyticsOrchestrator`), canonical `AnalyticsSnapshot` domain model, and subsystem diagnostics are fully verified and tested (54/54 unit tests passing across repo).
 
 Next Phase:
 
-Phase 6 — Analytics Subsystem (Ready to Begin)
+Phase 7 — Generators Subsystem (Ready to Begin)
 
 ---
 
