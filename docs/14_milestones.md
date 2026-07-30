@@ -514,11 +514,30 @@ Completed Deliverables:
 - Animation engine orchestrator (`AnimationOrchestrator`)
 - Subsystem diagnostics (`AnimationDiagnostics`)
 
+## Phase 10 — Automation & Execution Orchestration Subsystem
+
+Status:
+
+✅ Complete
+
+Completed Deliverables:
+
+- Deterministic end-to-end pipeline workflow (`Workflow`)
+- Consistent stage interface (`ExecutionStage`: `started_at`, `completed_at`, `duration_ms`, `diagnostics`)
+- Centralized output artifact manager (`ArtifactManager`) with SHA-256 checksum manifests
+- Pluggable publishing abstraction (`BasePublisher`, `LocalFileSystemPublisher`)
+- Execution scheduling abstraction (`BaseScheduler`, `ManualScheduler`)
+- Exponential backoff retry policy (`AutomationRetryPolicy`)
+- Cooperative cancellation token and cleanup callbacks (`CancellationToken`)
+- Master automation orchestrator (`AutomationOrchestrator`)
+- Immutable execution report with full provenance (`ExecutionReport`: `workflow_id`, `version`, `config_hash`, `execution_mode`, `start_timestamp`, `end_timestamp`)
+- Subsystem diagnostics (`AutomationDiagnostics`)
+
 ---
 
 # Active Work
 
-Phase 10 — Automation Subsystem (Ready to Begin)
+Phase 11 — CLI Subsystem (Ready to Begin)
 
 ---
 
