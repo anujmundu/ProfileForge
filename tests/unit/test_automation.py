@@ -235,7 +235,7 @@ def test_execution_provenance_and_stage_interface() -> None:
 
         report = orchestrator.execute_workflow("octocat")
 
-        assert report.version == "0.1.0"
+        assert report.version == "1.0.0"
         assert report.config_hash != ""
         assert report.execution_mode == "manual"
         assert report.start_timestamp != ""

@@ -159,7 +159,7 @@ def test_animation_versioning_metadata() -> None:
     orchestrator = AnimationOrchestrator()
     anim = orchestrator.create_card_entrance_animation("target_v")
 
-    assert anim.engine_version == "0.1.0"
+    assert anim.engine_version == "1.0.0"
     assert "fade_in" in anim.primitive_ids
     assert "slide_up" in anim.primitive_ids
     assert anim.config_hash != ""
