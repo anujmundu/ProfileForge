@@ -30,10 +30,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/anujmundu/anujmundu"
-Documentation = "https://github.com/anujmundu/anujmundu#readme"
-Repository = "https://github.com/anujmundu/anujmundu"
-Issues = "https://github.com/anujmundu/anujmundu/issues"
+Homepage = "https://github.com/anujmundu/ProfileForge"
+Documentation = "https://github.com/anujmundu/ProfileForge#readme"
+Repository = "https://github.com/anujmundu/ProfileForge"
+Issues = "https://github.com/anujmundu/ProfileForge/issues"
 
 [project.optional-dependencies]
 dev = [

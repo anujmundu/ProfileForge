@@ -10,8 +10,8 @@ ProfileForge is governed by strict architectural principles, engineering quality
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/anujmundu/anujmundu.git
-   cd anujmundu
+   git clone https://github.com/anujmundu/ProfileForge.git
+   cd ProfileForge
    ```
 
 2. **Create Virtual Environment & Install Dependencies**:

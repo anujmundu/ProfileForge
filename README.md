@@ -10,14 +10,14 @@
 
   <br />
 
-  [![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg?style=for-the-badge&logo=github)](https://github.com/anujmundu/anujmundu/releases)
-  [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge&logo=github-actions)](https://github.com/anujmundu/anujmundu/actions)
-  [![Coverage](https://img.shields.io/badge/coverage-94%25-success.svg?style=for-the-badge&logo=codecov)](https://github.com/anujmundu/anujmundu)
+  [![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg?style=for-the-badge&logo=github)](https://github.com/anujmundu/ProfileForge/releases)
+  [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge&logo=github-actions)](https://github.com/anujmundu/ProfileForge/actions)
+  [![Coverage](https://img.shields.io/badge/coverage-94%25-success.svg?style=for-the-badge&logo=codecov)](https://github.com/anujmundu/ProfileForge)
   [![MyPy Strict](https://img.shields.io/badge/mypy-strict-blue.svg?style=for-the-badge&logo=python)](https://mypy.readthedocs.io/)
   [![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg?style=for-the-badge&logo=ruff)](https://github.com/astral-sh/ruff)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
   [![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.style=for-the-badge&logo=python)](https://python.org)
-  [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg?style=for-the-badge)](https://github.com/anujmundu/anujmundu)
+  [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg?style=for-the-badge)](https://github.com/anujmundu/ProfileForge)
 
   <br />
 
@@ -185,8 +185,8 @@ pip install profileforge
 
 ### Option 2: Installation from Source
 ```bash
-git clone https://github.com/anujmundu/anujmundu.git
-cd anujmundu
+git clone https://github.com/anujmundu/ProfileForge.git
+cd ProfileForge
 pip install -e .
 ```
 

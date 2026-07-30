@@ -25,4 +25,4 @@ A passionate software engineer building scalable open-source systems.
 
 ---
 
-*Generated automatically by [ProfileForge v1.0.0](https://github.com/anujmundu/anujmundu)*
+*Generated automatically by [ProfileForge v1.0.0](https://github.com/anujmundu/ProfileForge)*

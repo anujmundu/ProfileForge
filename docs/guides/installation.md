@@ -16,8 +16,8 @@ pip install profileforge
 
 ### 2. Install from Source for Development
 ```bash
-git clone https://github.com/anujmundu/anujmundu.git
-cd anujmundu
+git clone https://github.com/anujmundu/ProfileForge.git
+cd ProfileForge
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -e ".[dev]"
