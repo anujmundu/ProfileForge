@@ -1,9 +1,0 @@
-Jinja2>=3.1.6
-PyGithub>=2.7.0
-pydantic>=2.11.0
-python-dotenv>=1.1.0
-requests>=2.32.0
-
-pytest
-black
-ruff
