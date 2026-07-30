@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="accentBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="500" rx="16" fill="#0B0F19" stroke="#1E293B" stroke-width="2" />
+  
+  <text x="450" y="45" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">ProfileForge 9-Subsystem Architecture</text>
+  <text x="450" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Single-Directional Dataflow &amp; Immutable Domain Boundaries</text>
+
+  <!-- Flow Grid -->
+  <!-- Layer 1: Config & Engine -->
+  <g transform="translate(60, 110)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#38BDF8" stroke-width="2" />
+    <text x="115" y="38" fill="#38BDF8" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">01. Configuration</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">YAML / Env / Secret Validation</text>
+  </g>
+
+  <g transform="translate(335, 110)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#818CF8" stroke-width="2" />
+    <text x="115" y="38" fill="#818CF8" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">02. Engine &amp; Lifecycle</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">9-Stage State Machine</text>
+  </g>
+
+  <g transform="translate(610, 110)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#C084FC" stroke-width="2" />
+    <text x="115" y="38" fill="#C084FC" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">03. GitHub Client</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">REST / Rate Limits / Cache</text>
+  </g>
+
+  <!-- Layer 2: Data Collection & Analytics -->
+  <g transform="translate(60, 230)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#4ADE80" stroke-width="2" />
+    <text x="115" y="38" fill="#4ADE80" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">04. Collectors</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">User, Repos, Contributions</text>
+  </g>
+
+  <g transform="translate(335, 230)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#FACC15" stroke-width="2" />
+    <text x="115" y="38" fill="#FACC15" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">05. Analytics Engine</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Entropy, Scoring, Tech Stack</text>
+  </g>
+
+  <g transform="translate(610, 230)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#FB923C" stroke-width="2" />
+    <text x="115" y="38" fill="#FB923C" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">06. Generators</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Presentation Model Factory</text>
+  </g>
+
+  <!-- Layer 3: Renderers, Animations & Automation -->
+  <g transform="translate(60, 350)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#F43F5E" stroke-width="2" />
+    <text x="115" y="38" fill="#F43F5E" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">07. Renderers</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Markdown, SVG, JSON</text>
+  </g>
+
+  <g transform="translate(335, 350)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#E879F9" stroke-width="2" />
+    <text x="115" y="38" fill="#E879F9" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">08. Animation Engine</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">SMIL Primitives &amp; Opt-Out</text>
+  </g>
+
+  <g transform="translate(610, 350)">
+    <rect width="230" height="80" rx="12" fill="url(#cardBg)" stroke="#38BDF8" stroke-width="2" />
+    <text x="115" y="38" fill="#38BDF8" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">09. Automation</text>
+    <text x="115" y="60" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Workflow, SHA-256, Publish</text>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M 290 150 L 335 150 M 565 150 L 610 150" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M 290 270 L 335 270 M 565 270 L 610 270" stroke="#334155" stroke-width="3" />
+  <path d="M 290 390 L 335 390 M 565 390 L 610 390" stroke="#334155" stroke-width="3" />
+</svg>

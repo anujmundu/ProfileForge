@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-07-30T12:00:00Z",
+  "user": {
+    "username": "octocat",
+    "name": "The Octocat",
+    "public_repos": 42,
+    "followers": 1337,
+    "following": 42
+  },
+  "analytics": {
+    "total_stars": 8500,
+    "language_entropy": 2.14,
+    "primary_languages": ["Python", "TypeScript", "Rust", "Go"],
+    "portfolio_score": 98.5
+  }
+}

@@ -1,0 +1,13 @@
+# ProfileForge Development Dependencies
+# Includes runtime dependencies + testing, linting, type-checking, and build toolchains
+
+-r requirements.txt
+
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+mypy>=1.6.0
+ruff>=0.1.0
+types-pyyaml>=6.0.12
+build>=1.0.0
+twine>=4.0.2

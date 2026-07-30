@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 140" width="450" height="140">
+  <rect width="450" height="140" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="2" />
+  <text x="30" y="35" fill="#C084FC" font-family="sans-serif" font-size="18" font-weight="700">Recent Open Source Activity</text>
+  <text x="30" y="70" fill="#94A3B8" font-family="sans-serif" font-size="13">Pull Requests: 142 • Code Reviews: 88 • Issues Solved: 64</text>
+  <text x="30" y="105" fill="#4ADE80" font-family="sans-serif" font-size="13">Active streak: 42 consecutive days</text>
+</svg>

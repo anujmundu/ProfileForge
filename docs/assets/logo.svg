@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0844" />
+      <stop offset="100%" stop-color="#FFB199" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#0F172A" />
+  <path d="M 25 30 L 50 18 L 75 30 L 75 70 L 50 82 L 25 70 Z" fill="none" stroke="url(#logoGrad)" stroke-width="4" stroke-linejoin="round" />
+  <path d="M 35 40 L 50 32 L 65 40 L 65 60 L 50 68 L 35 60 Z" fill="url(#logoGrad)" opacity="0.2" />
+  <circle cx="50" cy="50" r="10" fill="url(#accentGrad)" />
+  <path d="M 46 44 L 54 50 L 46 56" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,7 @@
+# ProfileForge Runtime Dependencies
+# Derived from pyproject.toml PEP 621 specifications
+
+pydantic>=2.5.0
+httpx>=0.25.0
+pyyaml>=6.0.1
+jinja2>=3.1.2
