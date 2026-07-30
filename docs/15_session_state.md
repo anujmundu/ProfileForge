@@ -57,7 +57,7 @@ Complete
 
 # Current Development Phase
 
-Phase 6 — Analytics Subsystem
+Phase 7 — Generators Subsystem
 
 Status:
 
@@ -65,13 +65,13 @@ Complete (Verified, Tested & Approved)
 
 Objective:
 
-Implement the complete Analytics subsystem (`profileforge.analytics`) defined by Document 08.
+Implement the complete Generators subsystem (`profileforge.generators`) defined by Document 09.
 
-All analyzers (`RepositoryAnalyzer`, `LanguageAnalyzer`, `TechnologyAnalyzer`, `SkillAnalyzer`, `ActivityAnalyzer`, `PortfolioAnalyzer`), scoring engine (`RepositoryScorer`), deterministic pipeline orchestration (`AnalyticsOrchestrator`), canonical `AnalyticsSnapshot` domain model, and subsystem diagnostics are fully verified and tested (54/54 unit tests passing across repo).
+All presentation generators (`ProfileGenerator`, `StatisticsGenerator`, `FeaturedGenerator`, `TechnologyGenerator`, `TimelineGenerator`, `AchievementsGenerator`, `SectionsGenerator`), pipeline orchestration (`GeneratorOrchestrator`), canonical `PresentationModel` domain model, and subsystem diagnostics are fully verified and tested (63/63 unit tests passing across repo).
 
 Next Phase:
 
-Phase 7 — Generators Subsystem (Ready to Begin)
+Phase 8 — Rendering Subsystem (Ready to Begin)
 
 ---
 
