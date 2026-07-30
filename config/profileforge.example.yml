@@ -1,0 +1,64 @@
+# ProfileForge Example Configuration File
+# Copy to config/profileforge.yml or reference via CLI
+
+app:
+  app_name: "ProfileForge"
+  environment: "development"
+  debug: false
+  diagnostics_enabled: true
+
+github:
+  api_endpoint: "https://api.github.com"
+  timeout_seconds: 30.0
+  max_retries: 3
+  backoff_factor: 2.0
+  cache_enabled: true
+  cache_ttl_seconds: 3600
+
+rendering:
+  output_formats:
+    - markdown
+    - svg
+    - json
+  enabled_renderers:
+    - markdown
+    - svg
+    - json
+  template_dir: "assets/templates"
+  layout_preference: "modern_grid"
+  validate_output: true
+
+themes:
+  active_theme: "dark_glassmorphism"
+  typography: "Inter, sans-serif"
+  icon_set: "octicons"
+  spacing_preset: "comfortable"
+  border_style: "rounded"
+
+animation:
+  enabled: true
+  reduced_motion: false
+  timing_preset: "normal"
+  easing_preset: "ease_in_out"
+  stagger_interval_ms: 100
+  animation_theme: "smooth_fade"
+
+analytics:
+  featured_repo_count: 6
+  confidence_threshold: 0.7
+  scoring_weights:
+    recency: 0.25
+    stars: 0.20
+    forks: 0.15
+    activity: 0.25
+    completeness: 0.15
+
+logging:
+  level: "INFO"
+  destination: "stdout"
+  format: "structured"
+
+output:
+  output_dir: "assets/generated"
+  readme_filename: "README.md"
+  overwrite_policy: "always"
