@@ -411,11 +411,45 @@ Completed Deliverables:
 - Engine health reporting
 - Structured diagnostics collection
 
+## Phase 4 — GitHub Integration Subsystem
+
+Status:
+
+✅ Complete
+
+Completed Deliverables:
+
+- REST API client (`httpx`)
+- Authentication (PAT & Anonymous mode)
+- Endpoint path abstraction
+- Pagination Link header parsing
+- Exponential backoff retries
+- Rate limit awareness
+- In-memory TTL caching
+- Immutable normalized response models
+
+## Phase 5 — Collectors Subsystem
+
+Status:
+
+✅ Complete
+
+Completed Deliverables:
+
+- User profile collection (`UserCollector`)
+- Repository metadata collection (`RepositoryCollector`)
+- Language usage statistics collection (`LanguageCollector`)
+- Contribution activity collection (`ContributionCollector`)
+- Organization membership collection (`OrganizationCollector`)
+- Collection pipeline orchestration (`CollectorOrchestrator`)
+- Canonical collection snapshot model (`CollectionSnapshot`)
+- Subsystem diagnostics (`CollectorDiagnostics`)
+
 ---
 
 # Active Work
 
-Phase 4 — GitHub Integration Subsystem (Ready to Begin)
+Phase 6 — Analytics Subsystem (Ready to Begin)
 
 ---
 

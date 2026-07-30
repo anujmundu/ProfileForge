@@ -57,7 +57,7 @@ Complete
 
 # Current Development Phase
 
-Phase 3 — Engine Subsystem
+Phase 5 — Collectors Subsystem
 
 Status:
 
@@ -65,13 +65,13 @@ Complete (Verified, Tested & Approved)
 
 Objective:
 
-Implement the complete Engine subsystem (`profileforge.engine`) defined by Document 06.
+Implement the complete Collectors subsystem (`profileforge.collectors`) defined by Document 03 and Document 08.
 
-All 9 lifecycle phases, state machine transitions, dependency registry, immutable execution context, engine diagnostics, and health reporting are fully verified and tested (26/26 unit tests passing).
+All modular collectors (`UserCollector`, `RepositoryCollector`, `LanguageCollector`, `ContributionCollector`, `OrganizationCollector`), deterministic pipeline orchestration (`CollectorOrchestrator`), canonical `CollectionSnapshot` domain model, and subsystem diagnostics are fully verified and tested (44/44 unit tests passing across repo).
 
 Next Phase:
 
-Phase 4 — GitHub Integration Subsystem (Ready to Begin)
+Phase 6 — Analytics Subsystem (Ready to Begin)
 
 ---
 
