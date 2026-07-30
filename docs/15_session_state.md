@@ -57,7 +57,7 @@ Complete
 
 # Current Development Phase
 
-Phase 7 — Generators Subsystem
+Phase 8 — Rendering Subsystem
 
 Status:
 
@@ -65,13 +65,13 @@ Complete (Verified, Tested & Approved)
 
 Objective:
 
-Implement the complete Generators subsystem (`profileforge.generators`) defined by Document 09.
+Implement the complete Rendering subsystem (`profileforge.renderers`) defined by Document 09.
 
-All presentation generators (`ProfileGenerator`, `StatisticsGenerator`, `FeaturedGenerator`, `TechnologyGenerator`, `TimelineGenerator`, `AchievementsGenerator`, `SectionsGenerator`), pipeline orchestration (`GeneratorOrchestrator`), canonical `PresentationModel` domain model, and subsystem diagnostics are fully verified and tested (63/63 unit tests passing across repo).
+All concrete renderers (`MarkdownRenderer`, `SVGRenderer`, `JSONRenderer`), support loaders (`TemplateLoader`, `ThemeLoader`), abstract `BaseRenderer` contract, rendering orchestrator with failure isolation (`RendererOrchestrator`), immutable `RenderedArtifacts` domain model, and subsystem diagnostics are fully verified and tested (71/71 unit tests passing across repo).
 
 Next Phase:
 
-Phase 8 — Rendering Subsystem (Ready to Begin)
+Phase 9 — Animation Engine Subsystem (Ready to Begin)
 
 ---
 

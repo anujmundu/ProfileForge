@@ -481,11 +481,28 @@ Completed Deliverables:
 - Presentation pipeline orchestrator (`GeneratorOrchestrator`)
 - Immutable canonical presentation model (`PresentationModel`)
 
+## Phase 8 — Rendering Subsystem
+
+Status:
+
+✅ Complete
+
+Completed Deliverables:
+
+- Common renderer abstract contract (`BaseRenderer`)
+- Markdown README renderer (`MarkdownRenderer`)
+- SVG visual card renderer (`SVGRenderer`) with `ThemePalette` integration
+- JSON snapshot export renderer (`JSONRenderer`)
+- Centralized template loader (`TemplateLoader`)
+- Visual theme loader (`ThemeLoader`)
+- Rendering orchestrator with failure isolation (`RendererOrchestrator`)
+- Immutable rendered artifact models (`RenderedArtifacts`, `MarkdownArtifact`, `SVGArtifact`, `JSONArtifact`)
+
 ---
 
 # Active Work
 
-Phase 8 — Rendering Subsystem (Ready to Begin)
+Phase 9 — Animation Engine Subsystem (Ready to Begin)
 
 ---
 
