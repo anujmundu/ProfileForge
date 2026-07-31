@@ -4,7 +4,7 @@ Defines immutable Pydantic v2 models for each configuration category and
 the root ProfileForgeConfiguration model.
 """
 
-from enum import Enum
+from enum import StrEnum
 from pathlib import Path
 from typing import Any
 
@@ -14,7 +14,7 @@ from profileforge import __version__
 from profileforge.configuration.secrets import SecretStr
 
 
-class ExecutionEnvironment(str, Enum):
+class ExecutionEnvironment(StrEnum):
     """Supported execution environments."""
 
     DEVELOPMENT = "development"
@@ -22,7 +22,7 @@ class ExecutionEnvironment(str, Enum):
     PRODUCTION = "production"
 
 
-class LogLevel(str, Enum):
+class LogLevel(StrEnum):
     """Supported logging levels."""
 
     DEBUG = "DEBUG"
@@ -32,7 +32,7 @@ class LogLevel(str, Enum):
     CRITICAL = "CRITICAL"
 
 
-class OutputFormat(str, Enum):
+class OutputFormat(StrEnum):
     """Supported rendering output formats."""
 
     MARKDOWN = "markdown"
@@ -40,7 +40,7 @@ class OutputFormat(str, Enum):
     JSON = "json"
 
 
-class TimingPreset(str, Enum):
+class TimingPreset(StrEnum):
     """Animation timing duration presets."""
 
     INSTANT = "instant"
@@ -50,7 +50,7 @@ class TimingPreset(str, Enum):
     EXTENDED = "extended"
 
 
-class EasingPreset(str, Enum):
+class EasingPreset(StrEnum):
     """Animation easing function presets."""
 
     LINEAR = "linear"
@@ -59,7 +59,7 @@ class EasingPreset(str, Enum):
     EASE_IN_OUT = "ease_in_out"
 
 
-class OverwritePolicy(str, Enum):
+class OverwritePolicy(StrEnum):
     """Asset export overwrite policies."""
 
     ALWAYS = "always"

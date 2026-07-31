@@ -27,6 +27,9 @@ jobs:
       - name: Build Release Artifacts (sdist & wheel)
         run: python scripts/build_release.py
 
+      - name: Install Built Wheel into Environment
+        run: pip install dist/*.whl
+
       - name: Verify Package Contents
         run: python scripts/verify_distribution.py
 

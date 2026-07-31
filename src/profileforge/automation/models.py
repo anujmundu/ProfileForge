@@ -5,7 +5,7 @@ Governed by 03_SYSTEM_ARCHITECTURE_SPEC.md and 04_DOMAIN_MODEL_SPECIFICATION.md.
 """
 
 from datetime import UTC, datetime
-from enum import Enum
+from enum import StrEnum
 from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -13,7 +13,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from profileforge import __version__
 
 
-class StageStatus(str, Enum):
+class StageStatus(StrEnum):
     """Operational status of a workflow stage."""
 
     PENDING = "PENDING"

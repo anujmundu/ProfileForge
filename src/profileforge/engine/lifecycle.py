@@ -3,13 +3,13 @@
 Governed by 06_ENGINE_LIFECYCLE_SPECIFICATION.md.
 """
 
-from enum import Enum
+from enum import StrEnum
 from typing import ClassVar
 
 from profileforge.engine.exceptions import LifecycleError
 
 
-class LifecycleState(str, Enum):
+class LifecycleState(StrEnum):
     """Execution states of the Engine state machine."""
 
     CREATED = "CREATED"
@@ -25,7 +25,7 @@ class LifecycleState(str, Enum):
     EXIT = "EXIT"
 
 
-class LifecyclePhase(str, Enum):
+class LifecyclePhase(StrEnum):
     """The 9 canonical execution lifecycle phases."""
 
     BOOTSTRAP = "BOOTSTRAP"
